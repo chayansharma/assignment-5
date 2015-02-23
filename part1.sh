@@ -84,5 +84,6 @@ done
 
 if [ "$find_extension"=="true" ];then
 	find $filename -type f -name "*.""$extension" > "$prefix_e""$extension""_""$logfile_timestamp""$suffix_dat"
+	mv "$prefix_e""$extension""_""$logfile_timestamp""$suffix_dat" "./""$filename""/""$prefix_e""$extension""_""$logfile_timestamp""$suffix_dat"
 fi
 

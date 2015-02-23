@@ -1,6 +1,6 @@
 expression=""
 while [ "$1" != "" ]; do
-    expression=$(echo "$expression""$1")
+	expression=$(echo "$1")
     shift
 done
 
